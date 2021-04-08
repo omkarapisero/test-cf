@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="test-cf-test-suite.xml" />
+	<munit:test name="test-cf-test-suite-test-cfFlowTest" doc:id="01d8275d-27dc-4833-bcec-858777e434a4" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to test-cfFlow" doc:id="82df8bd6-35ce-4481-9029-6e2e11687fcb" name="test-cfFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="f710d5f2-1c9c-4b60-8cef-fdf2ba4787a8" actual="#[payload.test]" expected="app2" message="Match"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>

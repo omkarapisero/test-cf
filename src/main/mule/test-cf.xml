@@ -10,6 +10,8 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="test-cfFlow" doc:id="b3236373-fbae-4734-ac92-7ea5babe9dd9" >
 		<http:listener doc:name="Listener" doc:id="19798771-dd38-4500-8884-51b269904483" config-ref="HTTP_Listener_config" path="/test-cf"/>
+		<set-variable value="var1" doc:name="Set Variable" doc:id="f336c427-7dc4-42d1-b232-3b1dbc5286cf" variableName="var1"/>
+		<set-variable value="var2" doc:name="Set Variable" doc:id="866276e9-77fb-42c1-83ec-904e9ba9a3aa" variableName="var2"/>
 		<ee:transform doc:name="Transform Message" doc:id="3552ce4a-1ca4-4e28-9434-6cc7c247c13e" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
