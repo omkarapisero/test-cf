@@ -2,13 +2,13 @@
     <servers>
         <server>
             <id>Repository</id>
-            <username>${server.username}</username>
-            <password>${server.password}</password>
+            <username>omkarsero</username>
+            <password>Omkaromi@13</password>
         </server>
 		<server>
             <id>MuleRepository</id>
-            <username>${nexus.username}</username>
-            <password>${nexus.password}</password>
+            <username>recurly.nexus</username>
+            <password>LhguWUIL</password>
         </server>
     </servers>
 	<profiles>
