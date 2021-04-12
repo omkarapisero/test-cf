@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                           https://maven.apache.org/xsd/settings-1.0.0.xsd">     
     <servers>
-        <server>
-            <id>Repository</id>
-            <username>omkarsero</username>
-            <password>Omkaromi@13</password>
-        </server>
 		<server>
             <id>MuleRepository</id>
             <username>recurly.nexus</username>
             <password>LhguWUIL</password>
+        </server>
+		<server>
+            <id>Repository</id>
+            <username>omkarsero</username>
+            <password>Omkaromi@13</password>
         </server>
     </servers>
 	<profiles>
